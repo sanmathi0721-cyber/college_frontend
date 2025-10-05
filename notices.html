@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notices | College Notice Board</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Notices</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">🎓 College Notice Board</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="notices.html" class="active">Notices</a></li>
-        <li><a href="admin.html">Admin</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <h2>College Notice Board</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="notices.html" class="active">Notices</a>
+      <a href="admin.html">Admin</a>
+    </div>
+  </nav>
 
-  <main class="content">
-    <h2>All Notices</h2>
-    <div id="notices-container" class="notice-list"></div>
-  </main>
+  <section class="content">
+    <h2>📢 All Notices</h2>
+    <div id="noticeList" class="notices"></div>
+  </section>
 
-  <footer>
-    <p>© 2025 College Notice Board</p>
-  </footer>
+  <footer>© 2025 College Notice Board</footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
