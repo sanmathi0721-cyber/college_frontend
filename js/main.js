@@ -6,7 +6,7 @@
      DELETE /delete_notice/:id
 */
 
-const API = "https://your-backend.onrender.com"; // <<== change this to your backend URL
+const API = "https://college-backend-d7wa.onrender.com"; // <<== change this to your backend URL
 
 /* ---------------- Theme handling (multi-theme) ---------------- */
 const themeSelects = Array.from(document.querySelectorAll('#theme-select, #theme-select-2, #theme-select-3'));
