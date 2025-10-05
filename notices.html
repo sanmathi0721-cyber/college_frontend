@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>College Notice Board — Notices</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden><rect width="24" height="24" rx="4" fill="var(--accent)"/></svg>
+        <span>Notice Board</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="notices.html">Notices</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-outline" href="admin.html">Admin</a>
+        <select id="theme-select-2" aria-label="Select theme" class="theme-select-sm">
+          <option value="classic">Classic</option>
+          <option value="modern">Modern</option>
+          <option value="nature">Nature</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters-row">
+      <label for="category-filter">Filter by:</label>
+      <select id="category-filter">
+        <option value="">All Categories</option>
+        <option value="Events">Events</option>
+        <option value="Exams">Exams</option>
+        <option value="Deadlines">Deadlines</option>
+      </select>
+
+      <input id="search-input" placeholder="Search title or content…" />
+      <button id="refresh-btn" class="btn btn-sm">Refresh</button>
+    </section>
+
+    <section id="notices-grid" class="notices-grid">
+      <!-- populated by JS -->
+      <div class="muted">Loading notices…</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> College Notice Board</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
