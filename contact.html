@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — College Notice Board</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="var(--accent)"/></svg><span>Notice Board</span></a>
+      <nav class="nav"><a href="index.html">Home</a><a href="notices.html">Notices</a><a href="about.html">About</a><a class="active" href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card contact-card">
+      <h2>Contact</h2>
+      <p>If you have questions about this project or want to extend it, contact: <strong>your-email@example.com</strong></p>
+      <p>Project: Final Year — College Notice Board</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> College Notice Board</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>
