@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — College Notice Board</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html"><svg width="28" height="28" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="var(--accent)"/></svg><span>Notice Board</span></a>
+      <nav class="nav"><a href="index.html">Home</a><a href="notices.html">Notices</a><a class="active" href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card about-card">
+      <h2>About This Project</h2>
+      <p>This College Notice Board is a simple, responsive web application designed to manage announcements for campus events, exam alerts and deadline reminders. It's built as a final year project with a Flask backend API and a static frontend.</p>
+      <h3>Features</h3>
+      <ul>
+        <li>Admin panel to add and delete notices</li>
+        <li>Student-facing notices page with category filters</li>
+        <li>Three clean UI themes (Classic, Modern, Nature)</li>
+      </ul>
+      <p>Deploy using GitHub + Render — backend serves API, frontend is static HTML/JS.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> College Notice Board</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
