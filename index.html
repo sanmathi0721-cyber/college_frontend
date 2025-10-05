@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>College Notice Board — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="College Notice Board — announcements, events, exams and deadlines.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <!-- simple inline logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden><rect width="24" height="24" rx="4" fill="var(--accent)"/></svg>
+        <span>College Notice Board</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="notices.html">Notices</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-outline" href="admin.html">Admin</a>
+        <div class="theme-switch">
+          <label for="theme-select" class="sr-only">Theme</label>
+          <select id="theme-select" aria-label="Select theme">
+            <option value="classic">Classic</option>
+            <option value="modern">Modern</option>
+            <option value="nature">Nature</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <div class="hero-left">
+      <h1>Campus announcements — fast, clean, and central.</h1>
+      <p class="lead">Publish events, exam alerts, deadlines and more. Students can filter notices by category and stay informed.</p>
+      <div class="hero-cta">
+        <a class="btn" href="notices.html">View Notices</a>
+        <a class="btn btn-outline" href="admin.html">Post a Notice (Admin)</a>
+      </div>
+      <ul class="features">
+        <li>Category filters (Events, Exams, Deadlines)</li>
+        <li>Responsive & accessible design</li>
+        <li>CSV export (optional backend feature)</li>
+      </ul>
+    </div>
+    <aside class="hero-right">
+      <div class="card highlight">
+        <h4>Latest Notice</h4>
+        <div id="home-latest">
+          <!-- JS will fill this with the most recent notice -->
+          <p class="muted">Loading latest notice…</p>
+        </div>
+      </div>
+      <div class="card stats">
+        <p><strong>Notices</strong></p>
+        <p id="home-count">—</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> College Notice Board — built for your final year project.</p>
+      <small>Theme: <span id="current-theme">Classic</span></small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
