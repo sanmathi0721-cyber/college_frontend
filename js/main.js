@@ -1,4 +1,4 @@
-const API = "https://college-backend-d7wa.onrender.com"; // <-- Replace with your actual backend URL
+const API = "https://college-backend-1-yet5.onrender.com"; // <-- Replace with your actual backend URL
 
 // Load notices (for both admin and student)
 async function loadNotices() {
