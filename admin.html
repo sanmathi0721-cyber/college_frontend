@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Panel | College Notice Board</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">🎓 College Notice Board</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="notices.html">Notices</a></li>
-        <li><a href="admin.html" class="active">Admin</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <h2>Admin Panel</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="notices.html">Notices</a>
+      <a href="admin.html" class="active">Admin</a>
+    </div>
+  </nav>
 
-  <main class="content">
-    <h2>Post New Notice</h2>
+  <section class="content">
+    <h2>🧑‍💼 Add New Notice</h2>
     <form id="noticeForm">
-      <input type="text" id="title" placeholder="Notice Title" required />
-      <textarea id="content" placeholder="Notice Details" required></textarea>
-      <select id="category">
-        <option value="General">General</option>
-        <option value="Event">Event</option>
-        <option value="Exam">Exam</option>
-        <option value="Deadline">Deadline</option>
-      </select>
-      <button type="submit" class="btn">Post Notice</button>
+      <input type="text" id="title" placeholder="Notice Title" required><br>
+      <textarea id="content" placeholder="Notice Content" required></textarea><br>
+      <input type="text" id="category" placeholder="Category (e.g. Events, Exams)"><br>
+      <button type="submit">Post Notice</button>
     </form>
 
-    <h3>Existing Notices</h3>
-    <div id="admin-notice-list" class="notice-list"></div>
-  </main>
+    <div id="adminMessage"></div>
+  </section>
 
-  <footer>
-    <p>© 2025 College Notice Board</p>
-  </footer>
+  <footer>© 2025 College Notice Board</footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
