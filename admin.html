@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Panel — Post Notice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden><rect width="24" height="24" rx="4" fill="var(--accent)"/></svg>
+        <span>Admin Panel</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="notices.html">Notices</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <select id="theme-select-3" aria-label="Select theme" class="theme-select-sm">
+          <option value="classic">Classic</option>
+          <option value="modern">Modern</option>
+          <option value="nature">Nature</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container admin-main">
+    <div class="admin-left">
+      <h2>Post a New Notice</h2>
+      <div class="card form-card">
+        <label>Title</label>
+        <input id="notice-title" placeholder="Notice title" />
+        <label>Category</label>
+        <select id="notice-category">
+          <option value="Events">Events</option>
+          <option value="Exams">Exams</option>
+          <option value="Deadlines">Deadlines</option>
+        </select>
+        <label>Content</label>
+        <textarea id="notice-content" rows="6" placeholder="Write the notice content..."></textarea>
+        <div class="form-actions">
+          <button onclick="addNotice()" class="btn">Publish Notice</button>
+          <button onclick="clearForm()" class="btn btn-outline">Clear</button>
+        </div>
+      </div>
+      <div id="admin-msg" class="muted" style="margin-top:12px;">Use this panel to manage notices.</div>
+    </div>
+
+    <aside class="admin-right">
+      <h3>Existing Notices</h3>
+      <div id="admin-notices" class="notices-list">
+        <!-- admin list filled by JS -->
+        <div class="muted">Loading notices…</div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> College Notice Board — Admin</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
